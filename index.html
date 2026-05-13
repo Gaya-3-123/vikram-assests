@@ -7,8 +7,11 @@
     <style>
         body { background-color: #010a01; color: #00ff41; font-family: 'Courier New', Courier, monospace; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
         .portfolio-card { border: 2px solid #00ff41; border-radius: 15px; padding: 30px; background: rgba(0, 20, 0, 0.9); box-shadow: 0 0 25px #00ff41; max-width: 500px; width: 100%; text-align: center; }
-        .profile-container { position: relative; width: 180px; height: 180px; margin: 0 auto 20px; border: 3px solid #00ff41; border-radius: 50%; overflow: hidden; box-shadow: 0 0 15px #00ff41; }
-        .profile-container img { width: 100%; height: 100%; object-fit: cover; }
+        
+        /* HD Image Settings */
+        .profile-container { position: relative; width: 180px; height: 180px; margin: 0 auto 20px; border: 3px solid #00ff41; border-radius: 50%; overflow: hidden; box-shadow: 0 0 15px #00ff41; background: #000; }
+        .profile-container img { width: 100%; height: 100%; object-fit: cover; filter: none; } /* No more green dots on face */
+
         h1 { font-size: 28px; margin: 10px 0; letter-spacing: 2px; text-shadow: 0 0 10px #00ff41; }
         .role { color: #fff; font-size: 16px; letter-spacing: 1px; margin-bottom: 20px; display: block; border-bottom: 1px solid #00ff41; padding-bottom: 10px; }
         .skills-grid { display: flex; justify-content: space-around; margin: 30px 0; padding: 15px; border: 1px solid rgba(0, 255, 65, 0.3); border-radius: 10px; }
@@ -26,11 +29,13 @@
 <body>
     <div class="portfolio-card">
         <div class="profile-container">
-            <!-- Ippo intha link kandippa work aagum Gayathri -->
+            <!-- Ippo original HD image load aagum -->
             <img src="https://raw.githubusercontent.com/Gaya-3-123/vikram-assests/main/vikram.jpg" alt="Vikram.M">
         </div>
         <h1>VIKRAM.M</h1>
         <span class="role">JAVA FULL STACK DEVELOPER</span>
+        
+        <!-- Technical Skills Section -->
         <div class="section-header">Technical Skills</div>
         <div class="skills-grid">
             <div class="skill-column"><div class="bar-container"><div class="bar-fill" style="height: 85%;"></div></div><span class="skill-label">Java<br>Core</span></div>
@@ -39,6 +44,7 @@
             <div class="skill-column"><div class="bar-container"><div class="bar-fill" style="height: 65%;"></div></div><span class="skill-label">React<br>JS</span></div>
             <div class="skill-column"><div class="bar-container"><div class="bar-fill" style="height: 60%;"></div></div><span class="skill-label">API<br>Dev</span></div>
         </div>
+
         <div class="section-header">Project Highlights</div>
         <div class="project-container">
             <div class="project-box"><span class="project-num">01</span><strong>Smart Banking</strong><br>Secure J2EE system.</div>
