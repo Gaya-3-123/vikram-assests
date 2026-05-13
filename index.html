@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikram.M | Portfolio</title>
+    <style>
+        body { background-color: #010a01; color: #00ff41; font-family: 'Courier New', monospace; margin: 0; padding: 20px; display: flex; flex-direction: column; align-items: center; }
+        .portfolio-card { border: 2px solid #00ff41; border-radius: 15px; padding: 30px; background: rgba(0, 20, 0, 0.9); box-shadow: 0 0 25px #00ff41; max-width: 500px; width: 100%; text-align: center; }
+        
+        /* HD PROFILE IMAGE - NO FILTERS */
+        .profile-container { width: 180px; height: 180px; margin: 0 auto 20px; border: 3px solid #00ff41; border-radius: 50%; overflow: hidden; box-shadow: 0 0 15px #00ff41; background: #000; }
+        .profile-container img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; 
+            filter: none !important; /* Forces HD clarity */
+            -webkit-filter: none !important;
+        }
+
+        h1 { font-size: 28px; margin: 10px 0; text-shadow: 0 0 10px #00ff41; }
+        .role { color: #fff; border-bottom: 1px solid #00ff41; padding-bottom: 10px; display: block; margin-bottom: 20px; }
+        
+        .skills-grid { display: flex; justify-content: space-around; margin: 30px 0; border: 1px solid rgba(0, 255, 65, 0.3); padding: 15px; border-radius: 10px; }
+        .bar-container { width: 12px; height: 80px; background: #002200; border: 1px solid #00ff41; position: relative; margin-bottom: 5px; }
+        .bar-fill { position: absolute; bottom: 0; width: 100%; background: #00ff41; box-shadow: 0 0 8px #00ff41; }
+        .skill-label { font-size: 9px; color: #fff; }
+
+        .section-header { font-size: 14px; color: #00ff41; text-align: left; border-left: 4px solid #00ff41; padding-left: 10px; margin-bottom: 15px; }
+        .project-box { border: 1px solid #00ff41; padding: 10px; border-radius: 8px; font-size: 11px; background: rgba(0, 40, 0, 0.5); text-align: left; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <div class="portfolio-card">
+        <div class="profile-container">
+            <img src="https://raw.githubusercontent.com/Gaya-3-123/vikram-assests/main/vikram.jpg" alt="Vikram.M">
+        </div>
+        <h1>VIKRAM.M</h1>
+        <span class="role">JAVA FULL STACK DEVELOPER</span>
+
+        <div class="section-header">Technical Skills</div>
+        <div class="skills-grid">
+            <div style="display:flex; flex-direction:column; align-items:center;">
+                <div class="bar-container"><div class="bar-fill" style="height: 85%;"></div></div>
+                <span class="skill-label">JAVA</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center;">
+                <div class="bar-container"><div class="bar-fill" style="height: 75%;"></div></div>
+                <span class="skill-label">SPRING</span>
+            </div>
+            <div style="display:flex; flex-direction:column; align-items:center;">
+                <div class="bar-container"><div class="bar-fill" style="height: 70%;"></div></div>
+                <span class="skill-label">SQL</span>
+            </div>
+        </div>
+
+        <div class="section-header">Projects</div>
+        <div class="project-box"><strong>Smart Banking</strong> - Secure J2EE system.</div>
+        <div class="project-box"><strong>E-Store App</strong> - Full Stack App.</div>
+    </div>
+</body>
+</html>
